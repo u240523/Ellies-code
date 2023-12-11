@@ -14,7 +14,7 @@ public class Lab10 {
 
     public static void Q1() {
         while (true) {
-            System.out.println("Pick a shape: square, rectangle, circle (or 'q' to quit)");
+            System.out.println("Pick a shape: square, rectangle, circle (or input q to quit");
             String input = scan.nextLine();
             if (input.equals("q")) {
                 return;
@@ -24,8 +24,8 @@ public class Lab10 {
                 double a;
                 System.out.println("Enter the length of side a: ");
                 a = Double.parseDouble(scan.nextLine());
-                System.out.println("The circumference of the square is: " + a * 4);
-                System.out.println("The area of the square is: " + a * a);
+                System.out.println("Perimeter: " + a * 4 + "Area: " + a * a);
+                
 
             } else if (input.equals("rectangle")) {
                 double a, b;
