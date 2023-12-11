@@ -21,40 +21,41 @@ public class Lab10
             System.out.println("Pick a shape: square, rectangle, circle (or input q to quit");
             String input = scan.nextLine();
             
-            if (input.equals("q"))
-            {
-                return;
-            }
+                if (input.equals("q"))
+                {
+                    return;
+                }
 
-            if (input.equals("square"))
-            {
-                double a;
-                System.out.println("Enter the length of side a: ");
-                a = Double.parseDouble(scan.nextLine());
-                System.out.println("Perimeter: " + a * 4 + "Area: " + a * a);
-            }
+                if (input.equals("square"))
+                {
+                    double a;
+                    System.out.println("Enter the length of side a: ");
+                    a = Double.parseDouble(scan.nextLine());
+                    System.out.println("Perimeter: " + a * 4 + "Area: " + a * a);
+                }
 
-            else if (input.equals("rectangle"))
-            {
-                double a, b;
-                System.out.println("Enter the length of side a and b: ");
-                a = Double.parseDouble(scan.nextLine());
-                b = Double.parseDouble(scan.nextLine());
-                System.out.println("Perimeter: " + (2 * a + 2 * b) + "Area: " + (a * b));
-            } 
+                else if (input.equals("rectangle"))
+                {
+                    double a, b;
+                    System.out.println("Enter the length of side a and b: ");
+                    a = Double.parseDouble(scan.nextLine());
+                    b = Double.parseDouble(scan.nextLine());
+                    System.out.println("Perimeter: " + (2 * a + 2 * b) + "Area: " + (a * b));
+                }
 
-            else if (input.equals("circle")) 
-            {
-                double r;
-                System.out.println("Enter the radius: ");
-                r = Double.parseDouble(scan.nextLine());
-                System.out.println("Circumfrence: " + (Math.PI * r * 2) + "Area: " + (Math.PI * r * r));
-            }
-
+                else if (input.equals("circle"))
+                {
+                    double r;
+                    System.out.println("Enter the radius: ");
+                    r = Double.parseDouble(scan.nextLine());
+                    System.out.println("Circumfrence: " + (Math.PI * r * 2) + "Area: " + (Math.PI * r * r));
+                }
         }
+        
     }
 
-    public static void Q2() 
+
+    public static void Q2()
     {
         System.out.println("Q2: Enter the current day (1-31): ");
         int day = scan.nextInt();
@@ -257,15 +258,15 @@ public static void Q3()
             if (i < 2)
             {
                 continue;
-            boolean check = true;
+                boolean check = true;
             }
 
             for (int j = 2; j * j <= i; j++)
             {
                 if (i % j == 0)
                 {
-                check = false;
-                break;
+                    check = false;
+                    break;
                 }
             }
         
@@ -277,6 +278,7 @@ public static void Q3()
 
         System.out.println("There are: " + counter + " primes between 0 and " + n);
     }
+
 
     public static void Q4() 
     {
