@@ -142,6 +142,7 @@ public class Lab10 {
             System.out.println("December");
         } else {
             System.out.println("Invalid month");
+            return;
         }
     }
 
