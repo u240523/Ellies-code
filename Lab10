@@ -131,7 +131,7 @@ public class Lab10 {
         } else if (month == 7) {
             System.out.println("July");
         } else if (month == 8) {
-            System.out.println("Augst");
+            System.out.println("August");
         } else if (month == 9) {
             System.out.println("September");
         } else if (month == 10) {
